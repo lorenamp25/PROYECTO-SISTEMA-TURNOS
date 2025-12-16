@@ -1,0 +1,92 @@
+/* Estilos generales del formulario */
+.formulario {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+  }
+  
+  /* Estilos para las etiquetas */
+  .formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .formulario input,
+  .formulario textarea,
+  .formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Estilo para el textarea */
+  .formulario textarea {
+    resize: vertical;
+  }
+  
+  /* Hover y focus en los campos */
+  .formulario input:focus,
+  .formulario textarea:focus,
+  .formulario select:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Botones */
+  .botones {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn.aceptar {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn.aceptar:hover {
+    background-color: #45a049;
+  }
+  
+  .btn.cancelar {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn.cancelar:hover {
+    background-color: #e53935;
+  }
+  
+  /* Responsivo para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .formulario {
+      padding: 15px;
+    }
+  
+    .btn {
+      width: 48%;
+    }
+  }
+  
