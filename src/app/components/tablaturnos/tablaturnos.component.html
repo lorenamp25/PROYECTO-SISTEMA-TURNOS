@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            @if (datosCompletos) {
+                <th>Email</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @for(turno of turnos;track $index) {
+            <tr (dblclick)="onDoubleClickRow(turno)">
+                <td>{{ turno.id }}</td>
+                <td>{{ turno.fecha }}</td>
+                <td>{{ turno.hora }}</td>
+                @if (datosCompletos) {
+                  <td>{{ turno.email }}</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

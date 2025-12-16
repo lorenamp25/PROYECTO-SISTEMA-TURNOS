@@ -1,0 +1,58 @@
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Estilo del encabezado */
+  thead {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  thead th {
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo de las filas */
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hover en filas */
+  tbody tr:hover {
+    background-color: #f1c40f;
+    cursor: pointer;
+  }
+  
+  /* Celdas */
+  td, th {
+    padding: 12px 15px;
+  }
+  
+  /* Ajuste para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    table {
+      font-size: 0.9rem;
+    }
+  
+    td, th {
+      padding: 10px;
+    }
+  }
+  
