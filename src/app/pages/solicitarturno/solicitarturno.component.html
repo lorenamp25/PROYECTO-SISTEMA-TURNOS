@@ -1,0 +1,16 @@
+<p>Solicitar nuevo turno</p>
+
+@if(!mostrarformulario) {
+  @defer (when disponibles.length>0) {
+    <tablaturnos [datosCompletos]="false" [turnos]="disponibles" (turnoSeleccionadoEvent)="turnoseleccionado($event)" ></tablaturnos>
+  } @placeholder {
+      <p>Cargando datos...</p>
+  }
+}
+
+@if(mostrarformulario) {
+ <formturno [turno]="turno" (turnoSolicitadoEvent)="turnoSolicitado($event)" (cancelSolicitudEvent)="cancelarSolicitud($event)"></formturno>
+}
+
+<dialogcomponent #refDialog />
+
