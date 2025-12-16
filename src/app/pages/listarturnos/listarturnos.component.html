@@ -1,0 +1,7 @@
+<p>Listado de turnos</p>
+
+@defer (when turnos.length>0) {
+  <tablaturnos [turnos]="turnos" [datosCompletos]="true"></tablaturnos>
+} @placeholder {
+  <p>Cargando datos...</p>
+}
